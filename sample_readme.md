@@ -1,22 +1,22 @@
-# just
+# Let's see if the license badge changes!
 
-![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
+![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)
 
 ## Description 
- joking
+ projecting the project
 
 ## Installation 
- lets
+ installing the install
 
 ## Usage 
- try
+ using the usage
 
 ## Contribution Guidelines 
- this
+ contributing the contribution
 
 ## Testing 
- again
+ testing the test
 
 ## License 
- Apache License 2.0
+ Creative Commons Zero v1.0 Universal
 

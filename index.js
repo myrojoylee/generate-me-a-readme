@@ -67,26 +67,6 @@ const questions = [
   },
 ];
 
-// const licenseList = [
-//   {
-//     license: "None",
-//     label: "",
-//     badge: "",
-//     link: "",
-//   },
-//   {
-//     license: "Apache License 2.0",
-//     label: "License",
-//     badge: "https://img.shields.io/badge/License-Apache_2.0-blue.svg",
-//     link: "https://opensource.org/licenses/Apache-2.0",
-//   },
-//   {
-//     license: "GNU General Public License v3.0",
-//     badge: "",
-//     link: "",
-//   },
-// ];
-
 inquirer
   .prompt(questions)
   .then((data) => writeToFile("sample_readme.md", data));
@@ -94,15 +74,20 @@ inquirer
 // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {}
 
+function assignVariables(listItem) {
+  licenseBadge = new URL(listItem.badge);
+  licenseLabel = listItem.label;
+}
+
 function writeToFile(fileName, data) {
   for (const listItem of generateMarkdown.renderLicenseBadge()) {
     listItem.license === data.project_license
-      ? (licenseBadge = new URL(listItem.badge))
-      : console.log(false);
+      ? assignVariables(listItem)
+      : null;
   }
   fs.writeFileSync(
     fileName,
-    `# ${data.project_title}\n\n![License](${licenseBadge.href})\n\n`,
+    `# ${data.project_title}\n\n![${licenseLabel}](${licenseBadge.href})\n\n`,
     (err) => (err ? console.error(err) : console.log("done"))
   );
   for (const dataPoint of generateMarkdown.generateMarkdown(data)) {
@@ -110,17 +95,6 @@ function writeToFile(fileName, data) {
       err ? console.error(err) : console.log("done")
     );
   }
-
-  // console.log(generateMarkdown.renderLicenseBadge());
-
-  console.log(licenseBadge.href);
-
-  // `![License](${licenseBadge.href})\n\n`,
-  // fs.appendFile(
-  //   fileName,
-  //   generateMarkdown.renderLicenseBadge(licenseList),
-  //   (err) => (err ? console.error(err) : console.log("done"))
-  // );
 }
 
 // TODO: Create a function to initialize app
