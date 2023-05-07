@@ -87,18 +87,12 @@ const licenseList = [
   },
 ];
 
-let dataRenderList = [];
-
 inquirer
   .prompt(questions)
   .then((data) => writeToFile("sample_readme.md", data));
 
 // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {}
-
-// function consoleLogThisJawn(response) {
-//   response.project_license;
-// }
 
 function writeToFile(fileName, data) {
   for (const dataPoint of generateMarkdown.generateMarkdown(data)) {
