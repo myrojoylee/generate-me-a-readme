@@ -67,6 +67,28 @@ const questions = [
   },
 ];
 
+const licenseList = [
+  {
+    license: "None",
+    label: "",
+    badge: "",
+    link: "",
+  },
+  {
+    license: "Apache License 2.0",
+    label: "License",
+    badge: "https://img.shields.io/badge/License-Apache_2.0-blue.svg",
+    link: "https://opensource.org/licenses/Apache-2.0",
+  },
+  {
+    license: "GNU General Public License v3.0",
+    badge: "",
+    link: "",
+  },
+];
+
+let dataRenderList = [];
+
 inquirer
   .prompt(questions)
   .then((data) => writeToFile("sample_readme.md", data));
@@ -79,9 +101,17 @@ inquirer
 // }
 
 function writeToFile(fileName, data) {
-  fs.writeFile(fileName, generateMarkdown.generateMarkdown(data), (err) =>
-    err ? console.error(err) : console.log("done")
-  );
+  for (const dataPoint of generateMarkdown.generateMarkdown(data)) {
+    fs.appendFileSync(fileName, dataPoint, (err) =>
+      err ? console.error(err) : console.log("done")
+    );
+  }
+
+  // fs.appendFile(
+  //   fileName,
+  //   generateMarkdown.renderLicenseBadge(licenseList),
+  //   (err) => (err ? console.error(err) : console.log("done"))
+  // );
 }
 
 // TODO: Create a function to initialize app
