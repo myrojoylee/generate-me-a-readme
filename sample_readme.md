@@ -1,22 +1,28 @@
-# Let's see if the license badge changes!
+# Time
 
 ![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)
 
 ## Description 
- projecting the project
+ to
 
 ## Installation 
- installing the install
+ refactor
 
 ## Usage 
- using the usage
+ this
 
 ## Contribution Guidelines 
- contributing the contribution
+ schnizzle
 
 ## Testing 
- testing the test
+ mcdizzle
 
 ## License 
  Creative Commons Zero v1.0 Universal
 
+## Questions? 
+
+### For further information about this project, see below: 
+ - [Visit my Github](https://github.com/myrojoylee)
+
+ - [Email me here](mailto:myro.joy.lee@gmail.com)

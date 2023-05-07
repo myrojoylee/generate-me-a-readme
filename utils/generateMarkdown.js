@@ -1,8 +1,8 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-let licenseBadge;
+
 function renderLicenseBadge() {
-  licenseList = [
+  linkList = [
     {
       license: "None",
       label: "",
@@ -88,7 +88,7 @@ function renderLicenseBadge() {
       link: "http://unlicense.org/",
     },
   ];
-  return licenseList;
+  return linkList;
   // return `\n\n[![${licenseList[1].label}](${licenseList[1].badge})](${licenseList[1].link})`;
 }
 
@@ -109,6 +109,10 @@ function generateMarkdown(data) {
     `## Contribution Guidelines \n ${data.project_contribution_guidelines}\n\n`,
     `## Testing \n ${data.project_testing}\n\n`,
     `## License \n ${data.project_license}\n\n`,
+    `## Questions? \n\n`,
+    `### For further information about this project, see below: \n`,
+    ` - [Visit my Github](https://github.com/${data.project_author_username})\n\n`,
+    ` - [Email me here](mailto:${data.project_author_email})\n`,
   ];
   return dataRenderList;
 }

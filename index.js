@@ -1,8 +1,13 @@
-// TODO: Include packages needed for this application
+// ================================================= //
+//                   ---- PACKAGES ----              //
+// ================================================= //
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
-// TODO: Create an array of questions for user input
+
+// ================================================= //
+//                    ---- ARRAYS ----               //
+// ================================================= //
 const questions = [
   {
     type: "input",
@@ -67,18 +72,38 @@ const questions = [
   },
 ];
 
+let contactInfo = [];
+
+// inquirer prompt initialized
 inquirer
   .prompt(questions)
   .then((data) => writeToFile("sample_readme.md", data));
 
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-
-function assignVariables(listItem) {
+/**
+ * This assigns some variables from the list array
+ * in generateMarkdown.js
+ * @param {*} listItem
+ */
+function assignVariables(listItem, data) {
   licenseBadge = new URL(listItem.badge);
   licenseLabel = listItem.label;
+  licenseLink = new URL(listItem.link);
+
+  // contactInfo = [
+  //   {
+  //     github_label: "Visit my GitHub",
+  //     github: `https://github.com/${data.project_author_username}`,
+  //     email_label: "Email me here.",
+  //     email_link: `mailto:${data.project_author_email}`,
+  //   },
+  // ];
 }
 
+/**
+ * This writes data to the README
+ * @param {*} fileName
+ * @param {*} data
+ */
 function writeToFile(fileName, data) {
   for (const listItem of generateMarkdown.renderLicenseBadge()) {
     listItem.license === data.project_license
