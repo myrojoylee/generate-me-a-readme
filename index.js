@@ -72,8 +72,6 @@ const questions = [
   },
 ];
 
-let contactInfo = [];
-
 // inquirer prompt initialized
 inquirer
   .prompt(questions)
@@ -84,19 +82,10 @@ inquirer
  * in generateMarkdown.js
  * @param {*} listItem
  */
-function assignVariables(listItem, data) {
+function assignVariables(listItem) {
   licenseBadge = new URL(listItem.badge);
   licenseLabel = listItem.label;
   licenseLink = new URL(listItem.link);
-
-  // contactInfo = [
-  //   {
-  //     github_label: "Visit my GitHub",
-  //     github: `https://github.com/${data.project_author_username}`,
-  //     email_label: "Email me here.",
-  //     email_link: `mailto:${data.project_author_email}`,
-  //   },
-  // ];
 }
 
 /**

@@ -1,28 +1,38 @@
-# Time
+# Should I name it?
 
-![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Description 
- to
+ - Should I describe it?
+
+## Table of Contents 
+ - Should I describe it?
+
+ - [Installation](#installation)
+ - [Usage](#usage)
+ - [Contribution Guidelines]](#contribution-guidelines)
+ - [Testing](#testing)
+ - [License](#license)
+ - [Questions](#questions)
 
 ## Installation 
- refactor
+ - Do we need to install anything?
 
 ## Usage 
- this
+ - Do we need to use it?
 
 ## Contribution Guidelines 
- schnizzle
+ - Do people need to contribute?
 
 ## Testing 
- mcdizzle
+ - Does it need testing?
 
 ## License 
- Creative Commons Zero v1.0 Universal
+ - [MIT License](https://opensource.org/licenses/MIT)
 
 ## Questions? 
 
 ### For further information about this project, see below: 
- - [Visit my Github](https://github.com/myrojoylee)
+ - [Visit my Github](https://github.com/github)
 
- - [Email me here](mailto:myro.joy.lee@gmail.com)
+ - [Email me here](mailto:github@github.com)
