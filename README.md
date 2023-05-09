@@ -11,7 +11,7 @@
 - Node.js v 16 is needed in order to run this application.
 
 - As shown in the demo below, simply type into the terminal the following:
-  node index.js
+  `node index.js`
 
 https://user-images.githubusercontent.com/120980593/236988553-b9257e46-c53f-427b-bc4b-25089bf54025.mp4
 
