@@ -72,11 +72,15 @@ const questions = [
   },
 ];
 
-// inquirer prompt initialized
-inquirer
-  .prompt(questions)
-  .then((data) => writeToFile("sample_readme.md", data));
-
+/**
+ * initializes inquirer to start asking user questions
+ */
+function init() {
+  inquirer
+    .prompt(questions)
+    .then((data) => writeToFile("sample_readme.md", data));
+}
+init();
 /**
  * This assigns some variables from the list array
  * in generateMarkdown.js
@@ -110,9 +114,3 @@ function writeToFile(fileName, data) {
     );
   }
 }
-
-// TODO: Create a function to initialize app
-// function init() {}
-
-// Function call to initialize app
-// init();

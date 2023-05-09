@@ -1,21 +1,42 @@
 # GENERATE ME A README!
 
-WIP, stay tuned! Progress updated in the checklist below.
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Description
 
-- [ ] GIVEN a command-line application that accepts user input
-      WHEN I am prompted for information about my application repository
-      THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-- [x] WHEN I enter my project title
-- [x] THEN this is displayed as the title of the README
-- [x] WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-- [x] THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
-- [x] WHEN I choose a license for my application from a list of options
-- [x] THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-- [x] WHEN I enter my GitHub username
-- [x] THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
-- [x] WHEN I enter my email address
-- [x] THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
-- [ ] WHEN I click on the links in the Table of Contents
-- [ ] THEN I am taken to the corresponding section of the README
+- This assignment introduced us to Node.js JavaScript runtime environment. We learned how to create an application that can be run within the terminal. We were introduced to dependencies, and npm. Inquirer was installed and used to ask questions in order to generate a professional README document for any project.
+
+## Installation
+
+- Node.js v 16 is needed in order to run this application.
+
+- As shown in the demo below, simply type into the terminal the following:
+  node index.js
+
+<figure class="video_container">
+  <iframe src="https://github.com/myrojoylee/generate-me-a-readme/blob/main/assets/generate-readme-demo.mp4" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+
+## Usage
+
+- N/A
+
+## Contribution Guidelines
+
+- N/A
+
+## Testing
+
+- N/A
+
+## License
+
+- [MIT License](https://opensource.org/licenses/MIT)
+
+## Questions?
+
+### For further information about this project, see below:
+
+- [Visit my Github](https://github.com/myrojoylee)
+
+- [Email me here](mailto:myro.joy.olida.092282@gmail.com)

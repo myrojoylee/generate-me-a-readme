@@ -1,31 +1,30 @@
-# Should I name it?
+# Professional Portfolio - MJ Lee
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Description 
- - Should I describe it?
+ - This portfolio is my digital working resume. It is an exercise in HTML, CSS< and JavaScript.
 
 ## Table of Contents 
- - Should I describe it?
 
  - [Installation](#installation)
  - [Usage](#usage)
- - [Contribution Guidelines]](#contribution-guidelines)
+ - [Contribution Guidelines](#contribution-guidelines)
  - [Testing](#testing)
  - [License](#license)
  - [Questions](#questions)
 
 ## Installation 
- - Do we need to install anything?
+ - N/A
 
 ## Usage 
- - Do we need to use it?
+ - N/A
 
 ## Contribution Guidelines 
- - Do people need to contribute?
+ - N/A
 
 ## Testing 
- - Does it need testing?
+ - N/A
 
 ## License 
  - [MIT License](https://opensource.org/licenses/MIT)
@@ -33,6 +32,6 @@
 ## Questions? 
 
 ### For further information about this project, see below: 
- - [Visit my Github](https://github.com/github)
+ - [Visit my Github](https://github.com/myrojoylee)
 
- - [Email me here](mailto:github@github.com)
+ - [Email me here](mailto:myro.joy.olida.092282@gmail.com)

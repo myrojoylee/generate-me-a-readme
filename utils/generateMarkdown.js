@@ -1,6 +1,7 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-
+/**
+ * generates badge, badge label, and license link
+ * @returns
+ */
 function renderLicenseBadge() {
   linkList = [
     {
@@ -89,18 +90,13 @@ function renderLicenseBadge() {
     },
   ];
   return linkList;
-  // return `\n\n[![${licenseList[1].label}](${licenseList[1].badge})](${licenseList[1].link})`;
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
-// TODO: Create a function to generate markdown for README
+/**
+ * generates markdown for README sections
+ * @param {*} data
+ * @returns
+ */
 function generateMarkdown(data) {
   dataRenderList = [
     `## Description \n - ${data.project_description}\n\n`,
@@ -127,6 +123,4 @@ function generateMarkdown(data) {
 module.exports = {
   generateMarkdown,
   renderLicenseBadge,
-  renderLicenseLink,
-  renderLicenseSection,
 };
