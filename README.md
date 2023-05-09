@@ -13,9 +13,7 @@
 - As shown in the demo below, simply type into the terminal the following:
   node index.js
 
-<figure class="video_container">
-  <iframe src="https://github.com/myrojoylee/generate-me-a-readme/blob/main/assets/generate-readme-demo.mp4" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
+https://github.com/myrojoylee/generate-me-a-readme/blob/main/assets/generate-readme-demo.mp4
 
 ## Usage
 
