@@ -13,7 +13,7 @@
 - As shown in the demo below, simply type into the terminal the following:
   node index.js
 
-https://github.com/myrojoylee/generate-me-a-readme/blob/main/assets/generate-readme-demo.mp4
+https://user-images.githubusercontent.com/120980593/236988553-b9257e46-c53f-427b-bc4b-25089bf54025.mp4
 
 ## Usage
 
