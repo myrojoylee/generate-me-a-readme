@@ -13,7 +13,7 @@
 - As shown in the demo below, simply type into the terminal the following:
   `node index.js`
 
-https://user-images.githubusercontent.com/120980593/236988553-b9257e46-c53f-427b-bc4b-25089bf54025.mp4
+https://github.com/myrojoylee/generate-me-a-readme/assets/120980593/29dbf996-a129-4efa-9713-bb15496ba5fb
 
 ## Usage
 
