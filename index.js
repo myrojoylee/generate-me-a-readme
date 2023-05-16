@@ -6,7 +6,7 @@ const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // ================================================= //
-//                    ---- ARRAYS ----               //
+//                    ---- ARRAYS ----               /
 // ================================================= //
 const questions = [
   {
@@ -82,15 +82,7 @@ function init() {
 }
 init();
 /**
- * This assigns some variables from the list array
- * in generateMarkdown.js
- * @param {*} listItem
- */
-function assignVariables(listItem) {
-  licenseBadge = new URL(listItem.badge);
-  licenseLabel = listItem.label;
-  licenseLink = new URL(listItem.link);
-}
+
 
 /**
  * This writes data to the README
@@ -98,16 +90,28 @@ function assignVariables(listItem) {
  * @param {*} data
  */
 function writeToFile(fileName, data) {
-  for (const listItem of generateMarkdown.renderLicenseBadge()) {
+  for (const listItem of generateMarkdown.linkList) {
     listItem.license === data.project_license
       ? assignVariables(listItem)
       : null;
   }
+
+  /**
+   * Assigns variables to access badge info array in exported module
+   * @param {*} listItem
+   */
+  function assignVariables(listItem) {
+    licenseBadge = listItem.badge;
+    licenseLabel = listItem.label;
+    licenseLink = listItem.link;
+  }
+
   fs.writeFileSync(
     fileName,
-    `# ${data.project_title}\n\n![${licenseLabel}](${licenseBadge.href})\n\n`,
+    `# ${data.project_title}\n\n![${licenseLabel}](${licenseBadge})\n\n`,
     (err) => (err ? console.error(err) : console.log("done"))
   );
+
   for (const dataPoint of generateMarkdown.generateMarkdown(data)) {
     fs.appendFileSync(fileName, dataPoint, (err) =>
       err ? console.error(err) : console.log("done")

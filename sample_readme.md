@@ -3,7 +3,7 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Description 
- - This portfolio is my digital working resume. It is an exercise in HTML, CSS< and JavaScript.
+ - This portfolio is my digital working resume. It is an exercise in HTML, CSS, and JavaScript. Flexbox and grid were used to determine the layout of HTML elements and media queries supplemented the code in order for the layout to be responsive.
 
 ## Table of Contents 
 
