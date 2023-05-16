@@ -81,8 +81,6 @@ function init() {
     .then((data) => writeToFile("sample_readme.md", data));
 }
 init();
-/**
-
 
 /**
  * This writes data to the README
